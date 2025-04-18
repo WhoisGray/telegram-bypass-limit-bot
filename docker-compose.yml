@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+  telegram-bot:
+    build: .
+    container_name: telegram-large-file-bot
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./data:/app/data
+    environment:
+      - BOT_TOKEN=YOUR_BOT_TOKEN
+      - API_ID=YOUR_API_ID
+      - API_HASH=YOUR_API_HASH
+      - PHONE_NUMBER=YOUR_PHONE_NUMBER
+      - CHANNEL_USERNAME=@your_dummy_channel
+      - PORT=3000
+      - HOST=your-server-domain.com
+      - NODE_ENV=production

@@ -1,0 +1,22 @@
+{
+  "name": "telegram-large-file-bot",
+  "version": "1.0.0",
+  "description": "A Telegram bot that bypasses the 50MB downloading limit by streaming files",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "input": "^1.0.1",
+    "node-telegram-bot-api": "^0.64.0",
+    "telegram": "^2.19.10"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
